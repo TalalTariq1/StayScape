@@ -1,0 +1,41 @@
+.stats-dashboard-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.stat-metric-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.stat-card-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #717171;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.stat-card-prominent-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.stat-card-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+}

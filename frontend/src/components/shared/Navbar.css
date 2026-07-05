@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;500;700&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- FIXED BRAND LAYOUT (Removes the ugly underline & matching color) --- */
+.navbar-brand a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000 !important;
+  text-decoration: none !important; /* Strips underline completely */
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-brand a:hover {
+  opacity: 0.8;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* --- BASE MENU LINK STYLES --- */
+.menu-link {
+  text-decoration: none !important;
+  color: #666666 !important; /* Neutral color, not blue */
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.menu-link:hover {
+  color: #000000 !important;
+}
+
+.menu-link.active {
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+.menu-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+/* --- FIXED ADMIN MENU LINK POP STYLES --- */
+.menu-link.admin-menu-link {
+  color: #7c3aed !important; /* Premium Violet accent text instead of blue */
+  font-weight: 600 !important;
+}
+
+.menu-link.admin-menu-link:hover {
+  color: #6d28d9 !important;
+}
+
+.menu-link.admin-menu-link.active {
+  color: #6d28d9 !important;
+}
+
+.menu-link.admin-menu-link.active::after {
+  background-color: #7c3aed !important; /* Custom underline active tracker color */
+}
+
+/* --- ACTIONS & PROFILE FLEXBOX PANELS --- */
+.navbar-actions {
+  flex-shrink: 0;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+}
+
+.navbar-profile-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navbar-user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151; /* Charcoal Slate */
+  white-space: nowrap;
+}
+
+/* --- ACTION BUTTONS --- */
+.btn-book-now {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-book-now:hover {
+  opacity: 0.9;
+}
+
+/* Clean Minimalist Sign Up button default styles */
+nav.navbar .navbar-container .navbar-actions .nav-signup-btn {
+  background: none !important;
+  background-color: transparent !important;
+  color: #666666 !important;
+  border: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 8px 12px !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+  transition: color 0.2s ease !important;
+  display: inline-block !important;
+}
+
+nav.navbar .navbar-container .navbar-actions .nav-signup-btn:hover {
+  color: #000000 !important;
+}
+
+/* Polished style logic for the custom logout mechanism */
+.nav-logout-btn {
+  background: transparent !important;
+  border: 1px solid #d1d5db !important;
+  color: #4b5563 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-logout-btn:hover {
+  background-color: #f3f4f6 !important;
+  border-color: #9ca3af !important;
+  color: #1f2937 !important;
+}
+
+/* --- MOBILE RESPONSIVE MEDIA QUERY --- */
+@media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+  
+  .navbar-menu {
+    display: none; 
+  }
+  
+  .navbar-brand a {
+    font-size: 20px;
+  }
+  
+  .btn-book-now {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+
+.navbar-menu li a.menu-link.admin-menu-link:link,
+.navbar-menu li a.menu-link.admin-menu-link:visited {
+  color: #666666 !important;       
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+/* Hover state matching */
+.navbar-menu li a.menu-link.admin-menu-link:hover {
+  color: #000000 !important;       
+}
+
+/* Active state matching (When you are actually on the admin page) */
+.navbar-menu li a.menu-link.admin-menu-link.active {
+  color: #000000 !important;       
+  font-weight: 700 !important;     
+}
+
+.navbar-menu li a.menu-link.admin-menu-link.active::after {
+  background-color: #000000 !important; 
+}
+

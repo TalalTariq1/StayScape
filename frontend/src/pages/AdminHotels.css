@@ -1,0 +1,213 @@
+.admin-hotels-container {
+  max-width: 1100px;
+}
+
+/* CHANGED: cleaner, less corporate heading style */
+.admin-hotels-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1c1c;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.admin-hotels-header p {
+  color: #717171;
+  font-size: 14px;
+  margin: 0 0 36px 0;
+}
+
+/* CHANGED: proper spacing between Active and Inactive sections */
+.admin-inventory-section {
+  margin-bottom: 48px;
+}
+
+/* CHANGED: section headings properly spaced */
+.section-title-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1c1c;
+  margin: 0 0 20px 0;
+}
+
+.inactive-heading {
+  color: #717171;
+}
+
+/* CHANGED: divider with proper spacing */
+.section-divider-line {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 0 0 48px 0;
+}
+
+.hotels-management-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.admin-hotel-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.admin-hotel-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* CHANGED: archived card just has a left border, no opacity or grayscale */
+.archived-card {
+  border-left: 3px solid #a3a3a3;
+}
+
+.card-image-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.card-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* CHANGED: no grayscale filter on archived images */
+}
+
+.card-info-body {
+  padding: 18px 20px;
+}
+
+.card-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.card-city {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #a3a3a3;
+}
+
+.card-stars {
+  color: #1a1c1c;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.card-hotel-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1c1c;
+  margin: 0 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CHANGED: archived title just slightly muted, not a different color entirely */
+.archived-title {
+  color: #717171;
+}
+
+.card-price-tag {
+  font-size: 13px;
+  color: #717171;
+  margin: 0 0 16px 0;
+}
+
+.card-price-tag strong {
+  color: #1a1c1c;
+  font-size: 15px;
+}
+
+.card-actions-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mgmt-btn {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  color: #1a1c1c;
+  transition: all 0.15s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.mgmt-btn:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.mgmt-btn.room-btn {
+  background-color: #f3f3f4;
+  border-color: transparent;
+}
+
+.mgmt-btn.room-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.mgmt-btn.delete-btn {
+  color: #ba1a1a;
+  background-color: #fef2f2;
+  border-color: transparent;
+}
+
+.mgmt-btn.delete-btn:hover {
+  background-color: #ba1a1a;
+  color: #ffffff;
+}
+
+.delisted-badge {
+  font-size: 12px;
+  font-weight: 500;
+  color: #717171;
+}
+
+.empty-inventory-state {
+  text-align: center;
+  padding: 48px;
+  border: 1px dashed #eeeeee;
+  border-radius: 12px;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.admin-loading {
+  padding: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #717171;
+}
+
+.admin-error-banner {
+  font-size: 13px;
+  color: #991b1b;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px 16px;
+  border-radius: 10px;
+}

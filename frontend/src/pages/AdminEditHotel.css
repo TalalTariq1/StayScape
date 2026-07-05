@@ -1,0 +1,311 @@
+/* src/pages/AdminEditHotel.css */
+.edit-canvas-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  align-items: flex-start;
+}
+
+.canvas-main-content {
+  flex: 2;
+}
+
+.canvas-control-sidebar {
+  flex: 1;
+  position: sticky;
+  top: 100px;
+}
+
+/* Hero Asset Container Frame */
+.canvas-hero-image {
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fafafa;
+  margin-bottom: 32px;
+  border: 1px solid #eaeaea;
+}
+
+.canvas-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-img-banner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+
+/* Inline Edit Element Text Form Blocks */
+.canvas-field-group {
+  margin-bottom: 24px;
+}
+
+.canvas-field-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #999999;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.canvas-field-group input[type="text"], 
+.canvas-field-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.canvas-field-group textarea {
+  height: 160px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.editable-text-header {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+}
+
+.editable-text-p {
+  font-size: 16px;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.editable-textarea-p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444444;
+  margin: 0;
+  cursor: pointer;
+  white-space: pre-wrap;
+}
+
+.edit-indicator-icon {
+  font-size: 14px;
+  color: #999999;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.editable-text-header:hover .edit-indicator-icon,
+.editable-text-p:hover .edit-indicator-icon,
+.editable-textarea-p:hover .edit-indicator-icon {
+  opacity: 1;
+}
+
+.canvas-meta-row {
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.static-stars {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Control Panel Dock Construction */
+.control-sticky-box {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.control-sticky-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.control-sticky-box p {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.control-sticky-box hr {
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.sidebar-field-group {
+  margin-bottom: 24px;
+}
+
+.sidebar-field-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #999999;
+  margin-bottom: 8px;
+}
+
+.price-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 0 14px;
+  background-color: #fafafa;
+}
+
+.price-input-wrapper span {
+  font-weight: 600;
+  color: #333333;
+}
+
+.price-input-wrapper input {
+  border: none;
+  background: transparent;
+  padding: 12px 8px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  outline: none;
+}
+
+.sidebar-action-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar-action-btn.primary-save {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.sidebar-action-btn.primary-save:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.sidebar-action-btn.primary-save:disabled {
+  background-color: #999999;
+  border-color: #999999;
+  cursor: not-allowed;
+}
+
+.sidebar-action-btn.secondary-cancel {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #eaeaea;
+  margin-bottom: 0;
+}
+
+.sidebar-action-btn.secondary-cancel:hover {
+  border-color: #000000;
+}
+
+
+/* Add these blocks directly to your existing AdminEditHotel.css file */
+
+.normal-weight {
+  font-weight: 400 !important;
+  color: #333333;
+}
+
+/* Amenities Styling Layout */
+.editable-amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.editable-amenities-list:hover {
+  background-color: #fafafa;
+  border-color: #eaeaea;
+}
+
+.canvas-amenity-tag {
+  background-color: #f5f5f5;
+  color: #333333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #eaeaea;
+}
+
+.no-amenities-text {
+  font-size: 14px;
+  color: #999999;
+  font-style: italic;
+}
+
+/* Badge Management Design Nodes */
+.editable-badge-display {
+  padding: 8px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active-badge-pill {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+}
+
+.no-badge-pill {
+  color: #999999;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.sidebar-badge-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.edit-indicator-icon.inline {
+  opacity: 0;
+  margin-left: 6px;
+}
+
+.editable-amenities-list:hover .edit-indicator-icon.inline,
+.editable-badge-display:hover .edit-indicator-icon.inline {
+  opacity: 1;
+}

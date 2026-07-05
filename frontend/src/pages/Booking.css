@@ -1,0 +1,440 @@
+.booking-page-root-view {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.booking-page-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 104px 24px 100px 24px;
+  box-sizing: border-box;
+}
+
+.booking-breadcrumb {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #717171;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-node {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-divider {
+  color: #717171;
+}
+
+.breadcrumb-node.active {
+  color: #000000;
+}
+
+.booking-primary-headline {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.2 !important;
+  color: #000000;
+  margin: 0 0 32px 0;
+}
+
+/* Structural Layout Form Grid Mapping Framework matches parameters */
+.booking-layout-split-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.booking-aside-layout-column {
+  position: sticky;
+  top: 104px;
+  width: 380px;
+}
+
+.booking-main-details-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section-headline {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.form-section-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+  margin: 0 0 32px 0;
+}
+
+.form-fields-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-input-row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-input-label {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #000000;
+}
+
+.field-native-text-input,
+.field-native-textarea-input {
+  width: 100%;
+  border: 1px solid #b0b0b0;
+  border-radius: 24px;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.1s ease;
+}
+
+.field-native-textarea-input {
+  border-radius: 16px;
+  resize: vertical;
+}
+
+.field-native-text-input:focus,
+.field-native-textarea-input:focus {
+  border-color: #000000;
+}
+
+/* Custom Checkbox Realization Alignment row details matching design */
+.form-checkbox-alignment-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+.field-native-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #000000;
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkbox-text-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+  line-height: 1.5;
+}
+
+.text-link-node {
+  font-weight: 600;
+  color: #222222;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Form confirmation action elements matching design parameters precisely */
+.form-submit-block-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.form-pill-action-cta-submit {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  text-align: center;
+}
+
+.form-pill-action-cta-submit:hover {
+  opacity: 0.9;
+}
+
+.secure-encryption-badge-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.lock-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.form-runtime-error-notice {
+  background-color: #fff8f6;
+  border: 1px solid #e0b3b3;
+  color: #c13515;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Application Error Boundary Guard Layout Panel Screens */
+.booking-error-screen {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.error-message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.error-message-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.error-fallback-cta-link {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .booking-layout-split-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .booking-aside-layout-column {
+    width: 100%;
+    position: static;
+  }
+}
+
+
+/* ==========================================================================
+   Breadcrumb & Back Button Styling
+   ========================================================================== */
+.breadcrumb-back-cta {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.breadcrumb-back-cta:hover:not(:disabled) {
+  opacity: 0.6;
+}
+
+.breadcrumb-back-cta:disabled {
+  cursor: not-allowed;
+  color: #b0b0b0;
+}
+
+.back-chevron-icon {
+  width: 12px;
+  height: 12px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.booking-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Inline CSS Spinner Animation Configurations
+   ========================================================================== */
+.form-pill-action-cta-submit.state-processing {
+  background-color: #222222;
+  opacity: 0.75;
+  cursor: not-allowed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.css-native-loading-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: cyclicSpinRotationTransform 0.75s linear infinite;
+}
+
+@keyframes cyclicSpinRotationTransform {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   Fullscreen Modal Confirmation Success Overlay System
+   ========================================================================== */
+.success-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Smooth dimmed ambient context */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* Positions element on top of fixed header system */
+  animation: systemFadeInTransition 0.25s ease-out forwards;
+  backdrop-filter: blur(2px);
+}
+
+.success-modal-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(10px);
+  animation: modalScaleUpSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.success-checkmark-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #e8f7f0;
+  color: #10b981; /* Flat accessible mid-tone green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkmark-svg {
+  width: 28px;
+  height: 28px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.success-modal-title {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.success-modal-description {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #717171;
+  margin: 0 0 32px 0;
+}
+
+.highlight-hotel-name {
+  font-weight: 600;
+  color: #111111;
+}
+
+.success-modal-cta-btn {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.success-modal-cta-btn:hover {
+  opacity: 0.85;
+}
+
+/* Operational Animations */
+@keyframes systemFadeInTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalScaleUpSlide {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

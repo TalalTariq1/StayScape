@@ -1,0 +1,301 @@
+/* ==========================================================================
+   Room Selection Typography Cards
+   ========================================================================== */
+.room-selection-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.room-selection-card:hover {
+  border-color: #b0b0b0;
+}
+
+.room-selection-card.active-selected {
+  border: 2px solid #000000;
+  padding: 23px;
+}
+
+.room-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.room-title-block h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: #000000;
+}
+
+.room-specs {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+  margin: 0;
+}
+
+.room-pricing-block {
+  text-align: right;
+}
+
+.room-card-rate {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.room-card-unit {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.room-selected-indicator {
+  margin-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.selected-badge {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Review Rows
+   ========================================================================== */
+.guest-review-row {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.guest-review-row:last-child {
+  border-bottom: none;
+}
+
+.review-user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.review-text-stack {
+  flex: 1;
+}
+
+.review-meta-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.review-meta-line h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #000000;
+}
+
+.review-numeric-score {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.review-comment-body {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Interactive Booking Sidebar Panel Frame
+   ========================================================================== */
+.sticky-booking-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 104px; /* Matches layout top margin context */
+}
+
+.sidebar-rate-header {
+  margin-bottom: 24px;
+}
+
+.sidebar-prominent-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.sidebar-price-unit {
+  font-size: 16px;
+  font-weight: 400;
+  color: #717171;
+}
+
+/* Input Frame Realizations */
+.sidebar-inputs-frame {
+  border: 1px solid #b0b0b0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.sidebar-inputs-row {
+  display: flex;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.input-frame-cell {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.input-frame-cell.cell-right-border {
+  border-right: 1px solid #b0b0b0;
+}
+
+.input-frame-full-cell {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.sidebar-input-label {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #000000;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+/* Normalized Custom Browser Clean Target Date Input styling */
+.sidebar-native-picker {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.sidebar-static-guests-value {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+}
+
+/* Calculation Table Formatting */
+.sidebar-invoice-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.invoice-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-label-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.invoice-value-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.invoice-divider {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  margin: 2px 0;
+}
+
+.invoice-row.total-prominent {
+  margin-top: 4px;
+}
+
+.invoice-total-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.invoice-total-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Error Notice Field Styling */
+.date-error-notice {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c13515;
+  text-align: center;
+  background-color: #fff8f6;
+  border: 1px dashed #e0b3b3;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Primary Form Confirmation Action CTA */
+.sidebar-booking-action-btn {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.sidebar-booking-action-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.sidebar-booking-action-btn:disabled {
+  background-color: #e2e2e2;
+  color: #a1a1a1;
+  cursor: not-allowed;
+}

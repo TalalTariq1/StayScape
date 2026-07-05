@@ -1,0 +1,159 @@
+.summary-wrapper-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.summary-card-body {
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.summary-hotel-profile {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.summary-hotel-thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #f7f7f7;
+}
+
+.summary-profile-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-hotel-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.summary-hotel-location {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 4px;
+}
+
+.summary-hotel-rating {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1px solid #ededed;
+  margin: 24px 0;
+}
+
+.summary-stay-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-section-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #717171;
+  letter-spacing: 0.05em;
+  margin: 0 0 4px 0;
+}
+
+.summary-metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.metric-label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.metric-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  text-align: right;
+}
+
+.summary-invoice-ledger {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.invoice-ledger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ledger-label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.ledger-value {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.invoice-ledger-row.total-prominent-row {
+  margin-top: 8px;
+}
+
+.total-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.total-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Lower Box Notice matches layout boundaries of image_0843b4.png */
+.cancellation-policy-box {
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #f7f7f7;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.policy-shield-icon {
+  width: 16px;
+  height: 16px;
+  color: #222222;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.policy-notice-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.4;
+  margin: 0;
+}

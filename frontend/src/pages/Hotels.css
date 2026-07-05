@@ -1,0 +1,360 @@
+.listing-page-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 110px 24px 60px 24px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Horizontal Search Ribbon Form Wrapper Layout */
+.search-ribbon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.search-ribbon {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 6px 6px 6px 20px;
+  border-radius: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 920px;
+  box-sizing: border-box;
+}
+
+.search-input-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  position: relative;
+}
+
+.clickable-field {
+  cursor: pointer;
+}
+
+.input-icon {
+  fill: #222222;
+  flex-shrink: 0;
+}
+
+/* Stacked internal elements layout strategy */
+.input-inner-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-field-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+.search-input-field input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #000000;
+  width: 100%;
+  background: transparent;
+}
+
+.search-input-field input::placeholder {
+  color: #9a9a9a;
+}
+
+/* Modern styling layout rewrite for native browser date boxes */
+.native-date-input {
+  cursor: pointer;
+  font-size: 13px !important;
+  color: #333333 !important;
+}
+
+.guest-display-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.search-divider-line {
+  width: 1px;
+  height: 28px;
+  background-color: #eaeaea;
+  margin: 0 16px;
+  flex-shrink: 0;
+}
+
+/* Floating custom popover container menu box */
+.guest-picker-dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  z-index: 100;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.guest-picker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guest-label-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-type-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.guest-type-subtitle {
+  font-size: 12px;
+  color: #777777;
+}
+
+.guest-counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.counter-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d2d2d7;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.counter-btn:hover:not(:disabled) {
+  border-color: #000000;
+  background-color: #f5f5f7;
+}
+
+.counter-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.counter-value {
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 12px;
+  text-align: center;
+}
+
+.guest-close-action-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-ribbon-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+/* Primary Dual Column Workspace Configurations */
+.listing-workspace {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.results-panel {
+  flex-grow: 1;
+}
+
+.results-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.results-count-heading {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+  margin: 0;
+}
+
+.sorting-selector-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.empty-state-notice {
+  text-align: center;
+  padding: 80px 24px;
+  background-color: #f5f5f7;
+  border-radius: 16px;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-state-notice h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.empty-state-notice p {
+  font-size: 14px;
+  color: #666666;
+}
+
+@media (max-width: 1024px) {
+  .hotels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .listing-workspace {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .search-ribbon {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 16px;
+  }
+  .search-divider-line {
+    display: none;
+  }
+  .search-ribbon-btn {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+/* Pagination Styling Controls */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+  width: 100%;
+}
+
+.pagination-arrow-btn {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.2s ease;
+}
+
+.pagination-arrow-btn:hover:not(:disabled) {
+  border-color: #000000;
+  background-color: #f5f5f7;
+}
+
+.pagination-arrow-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-numbers-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-number-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.pagination-number-btn:hover {
+  background-color: #f5f5f7;
+  color: #000000;
+}
+
+.pagination-number-btn.active-page {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}

@@ -1,0 +1,400 @@
+/* ==========================================================================
+   Page Workspace Fallbacks & Core Wrappers 
+   ========================================================================== */
+.summary-page-root-view {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.summary-page-container {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 104px 24px 120px 24px;
+  box-sizing: border-box;
+}
+
+.summary-status-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.summary-status-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #717171;
+  text-align: center;
+}
+
+.summary-error-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.summary-fallback-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Navigation Breadcrumb Control 
+   ========================================================================== */
+.summary-navigation-back-cta {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.summary-navigation-back-cta:hover {
+  opacity: 0.6;
+}
+
+.back-chevron-arrow-svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   Workspace Headers Frame Layout 
+   ========================================================================== */
+.summary-workspace-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.summary-primary-headline {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.summary-status-pill-badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+
+.summary-status-pill-badge.badge-upcoming {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.summary-status-pill-badge.badge-completed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.summary-status-pill-badge.badge-cancelled {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+/* ==========================================================================
+   Bordered Display Segment Layout Card 
+   ========================================================================== */
+.summary-bordered-display-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.summary-display-card-section {
+  padding: 32px;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.summary-display-card-section:last-child {
+  border-bottom: none;
+}
+
+/* Section 1: Hotel Flexbox Parameters */
+.summary-display-card-section.hotel-info-flexbox {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.hotel-thumbnail-fallback-frame {
+  width: 120px;
+  height: 90px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  flex-shrink: 0;
+}
+
+.hotel-summary-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+}
+
+.hotel-meta-details-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-hotel-name-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.summary-hotel-location-pin {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 6px;
+}
+
+.summary-hotel-booking-id {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b0b0b0;
+}
+
+/* Section Labels & Internal Architecture Matrices */
+.summary-inner-section-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #717171;
+  letter-spacing: 0.06em;
+  margin: 0 0 20px 0;
+}
+
+.summary-data-grid-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+  width: 100%;
+}
+
+.summary-data-cell, .summary-data-cell-full {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary-data-cell-full {
+  grid-column: 1 / -1;
+}
+
+.cell-metadata-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #b0b0b0;
+  letter-spacing: 0.03em;
+}
+
+.cell-prominent-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.summary-special-requests-subcell {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.cell-prominent-paragraph-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222222;
+  margin: 0;
+}
+
+/* Section 4: Payment Layout Invoices Configuration */
+.summary-display-card-section.payment-invoice-section {
+  background-color: #fafafa;
+}
+
+.invoice-math-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.invoice-math-breakdown-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.invoice-line-item-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.invoice-line-item-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.invoice-total-divider-line {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.invoice-math-breakdown-row.absolute-total-prominent-row {
+  margin-top: 4px;
+}
+
+.invoice-grand-total-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.invoice-grand-total-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Persistent Action Control Triggers Matrix 
+   ========================================================================== */
+.summary-action-buttons-flexrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.summary-functional-pill-cta {
+  border: none;
+  border-radius: 100px;
+  padding: 14px 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.1s ease;
+}
+
+.summary-functional-pill-cta:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.summary-functional-pill-cta:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.summary-functional-pill-cta.cancel-btn-trigger {
+  background-color: #ffffff;
+  color: #c13515;
+  border: 1px solid #e2e2e2;
+}
+
+.summary-functional-pill-cta.cancel-btn-trigger:hover:not(:disabled) {
+  background-color: #fffaf9;
+  border-color: #f2cbaf;
+}
+
+.summary-functional-pill-cta.receipt-btn-trigger {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.receipt-download-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive Fluid Breakpoint Grid Modifiers */
+@media (max-width: 580px) {
+  .summary-display-card-section.hotel-info-flexbox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .summary-data-grid-two-columns {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  .summary-action-buttons-flexrow {
+    flex-direction: column-reverse;
+  }
+  .summary-functional-pill-cta {
+    width: 100%;
+  }
+}

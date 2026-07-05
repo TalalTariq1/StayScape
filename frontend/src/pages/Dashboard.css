@@ -1,0 +1,95 @@
+.dash-page-root-view {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.dash-workspace-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 104px 24px 100px 24px;
+  box-sizing: border-box;
+}
+
+.dash-layout-split-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.dash-main-content-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab Selection Underline Bar Row matches screenshot parameters */
+.dash-tabs-nav-bar-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+}
+
+.dash-tab-trigger {
+  background: none;
+  border: none;
+  padding: 12px 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #717171;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.dash-tab-trigger:hover {
+  color: #000000;
+}
+
+.dash-tab-trigger.tab-active {
+  color: #000000;
+}
+
+.dash-tab-trigger.tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+/* Vertical Core Listing stack clearances parameter declarations */
+.dash-bookings-vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.dash-content-fallback-notice {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #717171;
+  text-align: center;
+  padding: 64px 24px;
+  background-color: #fafafa;
+  border: 1px dashed #e2e2e2;
+  border-radius: 16px;
+}
+
+@media (max-width: 920px) {
+  .dash-layout-split-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .dash-sidebar-container {
+    width: 100%;
+  }
+}

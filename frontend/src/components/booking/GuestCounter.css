@@ -1,0 +1,79 @@
+.guest-counter-frame {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.counter-row:first-child {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.counter-label-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.counter-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.counter-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #717171;
+}
+
+.counter-stepper-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stepper-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #b0b0b0;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all 0.1s ease;
+}
+
+.stepper-btn:hover:not(:disabled) {
+  border-color: #000000;
+  background-color: #f7f7f7;
+}
+
+.stepper-btn:disabled {
+  border-color: #e2e2e2;
+  color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.counter-numeric-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  min-width: 16px;
+  text-align: center;
+}

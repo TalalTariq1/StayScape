@@ -1,0 +1,261 @@
+/* Premium blurred backdrop overlay */
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px; /* Reduced to avoid boundary clipping */
+}
+
+/* CHANGED: Swapped dimensions to be wider (520px) and short vertically */
+.auth-modal-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 520px; 
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 24px 36px; /* Drastically shaved down top/bottom padding */
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.12);
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Minimalist floating close button */
+.auth-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #a0a0a0;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.auth-close-btn:hover {
+  color: #000000;
+}
+
+/* Headings block configuration */
+.auth-heading-block {
+  margin-bottom: 16px; /* Compressed */
+}
+
+.auth-title {
+  font-size: 26px; /* Scaled down slightly to fit lower profile */
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.6px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Sleek Navigation Tab Line Switcher */
+.auth-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px; /* Compressed padding */
+}
+
+.auth-tab {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+  padding: 0 0 8px 0; /* Compressed padding */
+  cursor: pointer;
+  position: relative;
+}
+
+.auth-tab.active {
+  color: #000000;
+  font-weight: 700;
+}
+
+.auth-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+/* CHANGED: Drastically tightened up space fields */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Tight item stacking */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Shrunk label distance */
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.form-group label.uppercase-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-password-link {
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+
+/* CHANGED: Made fields wider but shorter vertically */
+.form-group input {
+  width: 100%;
+  padding: 10px 16px; /* Slimmer line height */
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-modal-card:has(.auth-tab.active:nth-child(2)) .form-group input,
+.auth-form input {
+  background-color: #f5f5f7;
+  border: 1px solid transparent;
+}
+
+.form-group input:focus {
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* Balanced Action Buttons */
+.auth-submit-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px; /* Slim profile button */
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.auth-submit-btn:hover:not(:disabled) {
+  background-color: #222222;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth-submit-btn:active:not(:disabled) {
+  transform: translateY(0);
+  background-color: #000000;
+}
+
+.auth-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Compressed OR Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #b0b0b5;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #f0f0f2;
+}
+
+.auth-divider span {
+  padding: 0 12px;
+}
+
+/* Google OAuth Button Pill Layout */
+.google-oauth-btn {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #e2e2e7;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px; /* Slimmer */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.google-oauth-btn:hover {
+  background-color: #f5f5f7;
+  border-color: #d2d2d7;
+  transform: translateY(-1px);
+}
+
+.google-oauth-btn:active {
+  transform: translateY(0);
+  background-color: #e8e8ed;
+}
+
+/* Clean Form Footer Prompts */
+.auth-footer-toggle {
+  text-align: center;
+  font-size: 13px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.auth-footer-toggle span {
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin-top: 80px; /* Shifts below your top navbar */
+}
+
+.admin-sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #eaeaea;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.sidebar-header span {
+  font-size: 13px;
+  color: #999999;
+}
+
+.sidebar-nav {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: #000000;
+}
+
+.sidebar-link.active {
+  background-color: #000000;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.exit-link {
+  text-decoration: none;
+  font-size: 13px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.exit-link:hover {
+  color: #000000;
+}
+
+.admin-content {
+  margin-left: 260px;
+  flex-grow: 1;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  min-height: calc(100vh - 80px);
+}

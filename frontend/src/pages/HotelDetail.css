@@ -1,0 +1,233 @@
+.detail-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  /* Top padding updated to 104px to completely clear 72px fixed navbar plus breathing room */
+  padding: 104px 24px 80px 24px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.detail-loading {
+  text-align: center;
+  padding: 120px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+/* Breadcrumb Styling */
+.detail-breadcrumb {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #717171;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-link {
+  color: #717171;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-link:hover {
+  color: #000000;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #717171;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-text {
+  color: #717171;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb-text.active {
+  color: #000000;
+}
+
+/* Header Sections */
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  width: 100%; /* No constraint bounds preventing overflow */
+}
+
+.detail-header-left {
+  flex: 1;
+  width: 100%;
+}
+
+/* Fix 1: Headline-lg Rule Definitions */
+.hotel-headline-name {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.2 !important;
+  margin: 0 0 8px 0;
+  color: #000000;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.detail-meta-info {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.detail-rating {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.detail-location-pin {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wishlist-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+.wishlist-btn svg {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+/* Hero Panoramic Layout Frame */
+.detail-hero-wrapper {
+  width: 100%;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.detail-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Core Column Split Layout */
+.detail-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.detail-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.detail-section {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 40px;
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+}
+
+/* Fix 1: Headline-md Structural Assignments */
+.section-headline-title {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.3 !important;
+  margin: 0 0 20px 0;
+  color: #000000;
+}
+
+/* Fix 1: Body-md Assignment Blocks */
+.detail-description-text {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #222222;
+  margin: 0;
+}
+
+/* Structural Layout Inner Wrappers */
+.detail-amenities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.amenity-pill-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.amenity-label-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.rooms-stack, .reviews-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviews-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviews-heading-row .section-headline-title {
+  margin: 0;
+}
+
+.reviews-view-all {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+}
+
+@media (max-width: 880px) {
+  .detail-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .detail-hero-wrapper {
+    height: 320px;
+  }
+}

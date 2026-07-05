@@ -1,0 +1,121 @@
+.destinations-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.destinations-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Styling */
+.destinations-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.destinations-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.destinations-subtitle {
+  font-size: 15px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Fully Responsive CSS Grid */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Destination Card Shell */
+.destination-card {
+  position: relative;
+  height: 380px; /* Tall proportional layout matching screen aspect ratio */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.destination-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Keep images ultra sharp */
+.destination-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-img {
+  transform: scale(1.03);
+}
+
+/* Dark bottom overlay vignette for pristine font contrast */
+.destination-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+/* Card Text Overlay */
+.destination-name {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 2;
+  letter-spacing: -0.3px;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 20px;
+  }
+  .destination-card {
+    height: 340px;
+  }
+}
+
+@media (max-width: 550px) {
+  .destinations-grid {
+    grid-template-columns: 1fr; /* Single column layout on small phones */
+    gap: 16px;
+  }
+  .destination-card {
+    height: 300px;
+  }
+  .destinations-title {
+    font-size: 26px;
+  }
+}

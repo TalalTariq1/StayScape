@@ -1,0 +1,253 @@
+.hotels-section {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.hotels-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Grid Row Alignment */
+.hotels-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.hotels-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.5px;
+}
+
+.hotels-subtitle {
+  font-size: 15px;
+  color: #666666;
+  margin: 0;
+}
+
+/* View All Link with Underline */
+.view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1.5px solid #000000;
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.view-all-link:hover {
+  opacity: 0.7;
+}
+
+.arrow-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* Responsive Horizontal Scroll Wrapper */
+.hotels-scroll-wrapper {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hides default bulky scrollbar on Firefox */
+}
+
+.hotels-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Hides default scrollbar on Chrome/Safari */
+}
+
+/* Base Card Block Structure */
+.hotel-card {
+  flex: 0 0 calc(25% - 18px); /* Flawless 4 columns layout on broad screens */
+  min-width: 280px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  /* Smooth transition for both the transform lift and the shadow shift */
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Perfect Hover Lift & Deep Drop-Shadow matching the screenshot */
+.hotel-card:hover {
+  transform: translateY(-4px); /* Lifts the card slightly up */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12); /* Deep luxury shadow look */
+}
+
+/* Image Shell & Utilities */
+.hotel-image-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hotel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  transition: transform 0.5s ease;
+}
+
+/* Smooth zoom on the image when card is hovered */
+.hotel-card:hover .hotel-img {
+  transform: scale(1.02);
+}
+
+/* Dark Pill Badge Overlay */
+.hotel-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* Circular Floating Wishlist Heart Button */
+.wishlist-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ffffff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.05);
+}
+
+.wishlist-btn svg {
+  width: 18px;
+  height: 18px;
+  color: #000000;
+}
+
+/* Bottom Text Info Block */
+.hotel-info {
+  padding: 20px;
+}
+
+.hotel-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 6px 0;
+}
+
+.hotel-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+.pin-icon {
+  width: 14px;
+  height: 14px;
+  color: #888888;
+}
+
+/* Ratings Rows */
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.star {
+  color: #000000;
+  font-size: 14px;
+}
+
+.rating-score {
+  font-weight: 700;
+  color: #000000;
+}
+
+.review-count {
+  color: #888888;
+}
+
+/* Pricing Section */
+.hotel-price-row {
+  font-size: 14px;
+  color: #666666;
+}
+
+.price-label {
+  font-weight: 500;
+}
+
+.price-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.price-unit {
+  font-size: 13px;
+}
+
+/* --- ADAPTIVE GRID BREAKPOINTS --- */
+@media (max-width: 1200px) {
+  .hotel-card {
+    flex: 0 0 calc(33.333% - 16px); /* Drops to 3 visible cards on standard tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    flex: 0 0 calc(50% - 12px); /* Drops to 2 visible cards on small tablets */
+  }
+  .hotels-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hotel-card {
+    flex: 0 0 85%; /* Shows 1 full card and lets the next edge peek over to suggest swiping */
+  }
+  .hotels-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
