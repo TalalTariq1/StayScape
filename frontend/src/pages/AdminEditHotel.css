@@ -309,3 +309,19 @@
 .editable-badge-display:hover .edit-indicator-icon.inline {
   opacity: 1;
 }
+
+@media (max-width: 900px) {
+  .edit-canvas-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .canvas-control-sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .canvas-hero-image {
+    height: 220px;
+  }
+}

@@ -98,3 +98,24 @@
   font-weight: 500;
   color: #666666;
 }
+
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .overview-header h1 {
+    font-size: 24px;
+  }
+
+  .recent-table-wrapper,
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .recent-table {
+    min-width: 520px;
+  }
+}

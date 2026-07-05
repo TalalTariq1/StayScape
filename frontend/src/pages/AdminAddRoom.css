@@ -144,3 +144,13 @@
   font-weight: 600;
   margin-top: 80px;
 }
+
+@media (max-width: 768px) {
+  .form-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .room-form-card {
+    padding: 24px;
+  }
+}

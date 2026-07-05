@@ -279,6 +279,9 @@
     flex-direction: column;
     gap: 32px;
   }
+  .filters-sidebar {
+    width: 100%;
+  }
   .search-ribbon {
     flex-direction: column;
     border-radius: 20px;
@@ -292,6 +295,17 @@
     width: 100%;
     margin-left: 0;
     justify-content: center;
+  }
+  .listing-page-wrapper {
+    padding: 90px 16px 48px 16px;
+  }
+  .results-meta-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .hotels-grid {
+    grid-template-columns: 1fr;
   }
 }
 /* Pagination Styling Controls */

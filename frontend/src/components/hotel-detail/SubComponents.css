@@ -299,3 +299,24 @@
   color: #a1a1a1;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .room-card-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .room-pricing-block {
+    text-align: left;
+  }
+
+  .sticky-booking-card {
+    position: static;
+    top: auto;
+  }
+
+  .guest-review-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

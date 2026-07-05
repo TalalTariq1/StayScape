@@ -230,4 +230,22 @@
   .detail-hero-wrapper {
     height: 320px;
   }
+  .detail-container {
+    padding: 90px 16px 60px 16px;
+  }
+  .detail-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .wishlist-btn {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .hotel-headline-name {
+    font-size: 26px !important;
+  }
+  .detail-meta-info {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }

@@ -271,3 +271,78 @@
 .about-cta-btn.white:hover {
   background: #f3f3f4;
 }
+
+@media (max-width: 992px) {
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-story-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .about-hero {
+    padding: 72px 20px;
+  }
+
+  .about-hero-title {
+    font-size: 32px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 15px;
+  }
+
+  .about-story,
+  .about-values,
+  .about-team,
+  .about-bottom-cta {
+    padding: 64px 0;
+  }
+
+  .about-stats {
+    padding: 48px 0;
+  }
+
+  .about-section-title {
+    font-size: 24px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-cta-card {
+    padding: 40px 24px;
+  }
+
+  .about-cta-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-title {
+    font-size: 28px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .about-stat-value {
+    font-size: 28px;
+  }
+}

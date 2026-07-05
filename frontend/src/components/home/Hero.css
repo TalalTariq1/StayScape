@@ -22,7 +22,7 @@
     to right,
     rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 0.4) 60%,
-    rgba(0, 0, 0, 0.2) 100__%;
+    rgba(0, 0, 0, 0.2) 100%
   );
   z-index: 1;
 }
@@ -130,6 +130,10 @@
 @media (max-width: 768px) {
   .hero-section {
     height: 75vh; /* Shorter header area on smaller devices */
+  }
+
+  .hero-container {
+    padding: 0 16px;
   }
 
   .hero-title {

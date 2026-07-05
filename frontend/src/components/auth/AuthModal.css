@@ -259,3 +259,19 @@
   color: #000000;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .auth-modal-card {
+    padding: 20px 20px;
+    border-radius: 16px;
+  }
+
+  .auth-title {
+    font-size: 22px;
+  }
+
+  .auth-close-btn {
+    top: 16px;
+    right: 16px;
+  }
+}

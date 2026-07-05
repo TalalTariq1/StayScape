@@ -142,6 +142,10 @@
   .main-footer {
     padding: 48px 0 24px 0;
   }
+
+  .footer-container {
+    padding: 0 16px;
+  }
 }
 
 

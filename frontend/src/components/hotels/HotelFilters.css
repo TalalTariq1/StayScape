@@ -164,3 +164,15 @@
 .apply-filters-btn:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+  .filters-sidebar {
+    width: 100%;
+  }
+
+  .guest-picker-dropdown {
+    left: auto;
+    right: 0;
+    width: min(260px, calc(100vw - 48px));
+  }
+}

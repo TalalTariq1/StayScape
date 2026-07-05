@@ -252,6 +252,15 @@
     width: 100%;
     position: static;
   }
+  .booking-page-container {
+    padding: 90px 16px 80px 16px;
+  }
+  .form-input-row-split {
+    grid-template-columns: 1fr;
+  }
+  .booking-primary-headline {
+    font-size: 26px !important;
+  }
 }
 
 

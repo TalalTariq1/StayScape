@@ -250,4 +250,7 @@
     flex-direction: column;
     gap: 12px;
   }
+  .hotels-container {
+    padding: 0 16px;
+  }
 }

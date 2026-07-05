@@ -211,3 +211,13 @@
   padding: 12px 16px;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .hotels-management-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-hotels-header h1 {
+    font-size: 22px;
+  }
+}

@@ -118,4 +118,7 @@
   .destinations-title {
     font-size: 26px;
   }
+  .destinations-container {
+    padding: 0 16px;
+  }
 }
