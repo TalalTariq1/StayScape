@@ -8,7 +8,7 @@
 [![Backend](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge)](https://stayscape-9jbl.onrender.com)
 [![Frontend](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge)](https://stay-scape-zeta.vercel.app)
 
-**StayScape** is a production-ready hotel booking web application that allows users to search, browse, and book hotels. It features a complete admin dashboard for managing hotel listings, viewing all platform bookings, and monitoring key business metrics — all built from scratch without any UI frameworks.
+**StayScape** is a production-ready hotel booking web application that allows users to search, browse, and book hotels. It features a complete admin dashboard for managing hotel listings, viewing all platform bookings, and monitoring key business metrics  all built from scratch without any UI frameworks.
 
 </div>
 
